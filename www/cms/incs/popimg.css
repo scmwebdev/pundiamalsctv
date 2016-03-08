@@ -1,0 +1,63 @@
+.legendtitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	color: #000066;
+}
+a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration: underline;
+	color: #000066;
+}
+.fieldsearch {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	width: 100px;
+	border: 1px solid #000066;
+}
+
+.out  { background-color: #EEEEEE; }
+.out2 {	background-color: #FFFFFF; }
+.over {	background-color: #FCE7AD; }
+
+.fieldtext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	border: 1px solid #000066;
+	width: 400px;
+}
+.outdefault {
+
+	background-color: #CCCCCC;
+}
+.fieldsmall {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	width: 50px;
+}
+
+.form_text {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	border: 1px solid #000066;
+}
+.form_button {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	border: 1px solid #003366;
+}
+
+.tbl_header {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+.tbl_font {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
