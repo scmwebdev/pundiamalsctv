@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pundi Amal SCTV</title>
+<meta charset="utf-8">
+  
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/stylenivo.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/slidehl.css" type="text/css">
+
+
+
+<link href="css/fullcalendar.css" rel="stylesheet" />
+<link href="css/fullcalendar.print.css" rel="stylesheet" media="print" />
+<script src="jquery/jquery-1.9.1.min.js"></script>
+<script src="jquery/jquery-ui-1.10.2.custom.min.js"></script>
+<script src="js/fullcalendar.min.js"></script>
+<script>
+
+	$(document).ready(function() {
+	
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+		
+		$('#calendar').fullCalendar({
+			editable: true,
+			events: [
+				{
+					title: 'All Day Event',
+					start: new Date(y, m, 1)
+				},
+				{
+					title: 'Long Event',
+					start: new Date(y, m, d-5),
+					end: new Date(y, m, d-2)
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: new Date(y, m, d-3, 16, 0),
+					allDay: false
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: new Date(y, m, d+4, 16, 0),
+					allDay: false
+				},
+				{
+					title: 'Meeting',
+					start: new Date(y, m, d, 10, 30),
+					allDay: false
+				},
+				{
+					title: 'Lunch',
+					start: new Date(y, m, d, 12, 0),
+					end: new Date(y, m, d, 14, 0),
+					allDay: false
+				},
+				{
+					title: 'Birthday Party',
+					start: new Date(y, m, d+1, 19, 0),
+					end: new Date(y, m, d+1, 22, 30),
+					allDay: false
+				},
+				{
+					title: 'Click for Google',
+					start: new Date(y, m, 28),
+					end: new Date(y, m, 29),
+					url: 'http://google.com/'
+				}
+			]
+		});
+		
+	});
+
+</script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+
+
+</head>
+
+<body>
+
+<div id="wrapper">
+  <div id="container">
+    <div id="top">
+   	  <div id="logo" class="fl"><img src="images/logo_pundiamal.png"></div>
+          <form method="get" action="/search" id="search" style="width:200px; float:left; margin-left:500px; margin-top:30px">
+            <input name="q" type="text" size="40" placeholder="Search..." />
+          </form>
+          <div id="logo-sctv" class="fl" style="padding-top:20px; padding-left:15px"><img src="images/logo_sctv.png"></div>
+            
+          <div id="menu" class="fl">
+              <div id="menu-atas">
+                <ul>
+                <li><a class="current" href="#">HOME</a></li>
+                <li><a href="#">PROFIL</a></li>
+                <li><a href="#">AGENDA & BERITA</a></li>
+                <li><a href="#">GALERI</a></li>
+                <li><a href="#">DAFTAR PENYUMBANG</a></li>
+                <li><a href="#">TESTIMONI</a></li>
+                <li><a href="#">MITRA</a></li>
+                </ul>
+              </div>
+      </div>
+    </div>
+        
+    <div id="header">
+    	<div id="header-inside">   
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <a href="http://www.yahoo.com"><img src="images/slide1.jpg" title="Memberikan Layanan Kesehatan Gratis" /></a>
+               <a href="http://www.yahoo.com"> <img src="images/slide2.jpg" title="Membantu Pengembangan Pendidikan Karakter" /></a>
+                <a href="http://www.yahoo.com"><img src="images/slide3.jpg" title="This is an example of a caption" /></a>
+               <a href="http://www.yahoo.com"> <img src="images/slide4.jpg" title="This is an example of a caption" /></a>
+                
+                
+            </div>
+            
+        </div>
+             </div>
+    </div>
+    <div id="shadow"></div>
+    <div id="runtext"></div>
+    
+    <div id="content">
+    	<div id="leftbar-container" class="fl">
+        	
+             <div id="title-yellow">
+             	<div class="judul">EMPAT PILAR PUNDI AMAL SCTV</div>
+          </div>
+             <div id="left-content">
+               	<div id="left-content-inside">
+                  <div class="arrow fl"></div>
+                  <div class="isi fr"><span style="color:#0166a1; font-weight:bold">KESEHATAN</span><br>
+Berpartisipasi Meningkatkan Kesehatan Masyarakat
+Dalam struktur masyarakat, selalu ada sekelompok masyarakat yang tidak dapat menggapai fasilitas kesehatan yang minimal. Faktor kemiskinan <a href="#">...selengkapnya</a></div><div class="cb"></div>
+				<div class="horizontal">
+                </div>
+                  <div class="cb"></div>
+                </div>
+                
+                <div id="left-content-inside">
+                  <div class="arrow fl"></div>
+                  <div class="isi fr"><span style="color:#0166a1; font-weight:bold">PENGEMBANGAN LINGKUNGAN</span><br>
+Berpartisipasi Meningkatkan Kesehatan Masyarakat
+Dalam struktur masyarakat, selalu ada sekelompok masyarakat yang tidak dapat menggapai fasilitas kesehatan yang minimal. Faktor kemiskinan <a href="#">...selengkapnya</a></div><div class="cb"></div>
+				<div class="horizontal">
+                </div>
+                  <div class="cb"></div>
+                </div>
+                
+                <div id="left-content-inside">
+                  <div class="arrow fl"></div>
+                  <div class="isi fr"><span style="color:#0166a1; font-weight:bold">BENCANA</span><br>
+Berpartisipasi Meningkatkan Kesehatan Masyarakat
+Dalam struktur masyarakat, selalu ada sekelompok masyarakat yang tidak dapat menggapai fasilitas kesehatan yang minimal. Faktor kemiskinan <a href="#">...selengkapnya</a></div><div class="cb"></div>
+				<div class="horizontal">
+                </div>
+                  <div class="cb"></div>
+                </div>
+                
+                <div id="left-content-inside">
+                  <div class="arrow fl"></div>
+                  <div class="isi fr"><span style="color:#0166a1; font-weight:bold">PENDIDIKAN</span><br>
+Berpartisipasi Meningkatkan Kesehatan Masyarakat
+Dalam struktur masyarakat, selalu ada sekelompok masyarakat yang tidak dapat menggapai fasilitas kesehatan yang minimal. Faktor kemiskinan <a href="#">...selengkapnya</a></div><div class="cb"></div>  </div>
+				<br>
+                
+                
+                <div id="title-yellow">
+             	<div class="judul">VIDEO</div>
+             </div>
+             <div id="left-content">
+               	<div id="left-content-inside1"><a href="#"><div id="play-btn-small"></div><img src="images/video01.jpg" width="218" height="124"></a>
+                Pundi Amal SCTV dan TNI AL, Kerjasama Dalam Kegiatan Surya Bhaskara Jaya 2012 </div>
+               <div class="horizontal1"></div>
+               
+               <div id="left-content-inside1"><a href="#"><div id="play-btn-small"></div><img src="images/video02.jpg" width="218" height="124"></a>
+               Pundi Amal SCTV dan TNI AL, Kerjasama Dalam Kegiatan Surya Bhaskara Jaya 2012 </div>
+               <div class="horizontal1"></div>
+               
+               <div id="left-content-inside1"><a href="#"><div id="play-btn-small"></div><img src="images/video03.jpg" width="218" height="124"></a>
+                Pundi Amal SCTV dan TNI AL, Kerjasama Dalam Kegiatan Surya Bhaskara Jaya 2012 </div>
+               <div class="horizontal1"></div>
+               
+               <div id="left-content-inside1"><a href="#"><div id="play-btn-small"></div><img src="images/video01.jpg" width="218" height="124"></a>
+               Pundi Amal SCTV dan TNI AL, Kerjasama Dalam Kegiatan Surya Bhaskara Jaya 2012 </div>
+               <span style="float:right"><a href="#">Selengkapnya</a></span>
+                
+                
+                
+               <div class="cb"></div>
+               </div>
+            
+           
+            
+        </div>
+        
+        
+        
+        
+    </div>
+    
+    <div class="content-area fl">
+    	<div class="content-area-inside">
+       	  <div class="center">
+          	<div id="slidebox">
+        <!--<div class="next"></div>
+        <div class="previous"></div>-->
+        <div class="thumbs">
+        <a href="javascript:;" onClick="Slidebox('1');return true" class="thumb">1</a>
+        <a href="javascript:;" onClick="Slidebox('2');return true" class="thumb">2</a>
+        <a href="javascript:;" onClick="Slidebox('3');return true" class="thumb">3</a>
+        <a href="javascript:;" onClick="Slidebox('4');return true" class="thumb">4</a>
+        <a href="javascript:;" onClick="Slidebox('5');return true" class="thumb">5</a>
+        </div>
+            <div class="container">
+                <div class="content">
+                  <div>
+                  <div class="hl-shortd">
+                   <a href="http://news.liputan6.com/read/479750/lumpuh-seumur-hidup-perempuan-ini-lahirkan-bayi-sehat" title="Lumpuh Seumur Hidup, Perempuan Ini Lahirkan Bayi Sehat">
+                   
+        </a>
+        <div class="shortdesc" title="Marasai (27), wanita lumpuh bertubuh pendek asal Solok Selatan, Sumatera Barat, yang hanya memiliki tinggi 97 centimeter melahirkan bayi laki-laki di Rumah Sakit M. Jamil, Padang.">Marasai (27), wanita lumpuh bertubuh pendek asal Solok Selatan, Sumatera Barat, yang hanya memiliki tinggi 97 centimeter</div>
+                  </div>
+                  <a href="#"><img src="images/slide-1.jpg" width="440" height="283" border="0"></a></div>
+                </div>
+                
+                
+                <div class="content">
+                  <div>
+                  <div class="hl-shortd">
+                   <a href="http://news.liputan6.com/read/479750/lumpuh-seumur-hidup-perempuan-ini-lahirkan-bayi-sehat" title="Lumpuh Seumur Hidup, Perempuan Ini Lahirkan Bayi Sehat">
+                   
+        </a>
+        <div class="shortdesc" title="Marasai (27), wanita lumpuh bertubuh pendek asal Solok Selatan, Sumatera Barat, yang hanya memiliki tinggi 97 centimeter melahirkan bayi laki-laki di Rumah Sakit M. Jamil, Padang.">Marasai (27), wanita lumpuh bertubuh pendek asal Solok Selatan, Sumatera Barat, yang hanya memiliki tinggi 97 centimeter</div>
+                  </div>
+                  <a href="#"><img src="images/slide-2.jpg" width="440" height="283" border="0"></a></div>
+                </div>
+                
+                
+                <div class="content">
+                  <div>
+                  <div class="hl-shortd">
+                   <a href="http://news.liputan6.com/read/479750/lumpuh-seumur-hidup-perempuan-ini-lahirkan-bayi-sehat" title="Lumpuh Seumur Hidup, Perempuan Ini Lahirkan Bayi Sehat">
+                   
+        </a>
+        <div class="shortdesc" title="Marasai (27), wanita lumpuh bertubuh pendek asal Solok Selatan, Sumatera Barat, yang hanya memiliki tinggi 97 centimeter melahirkan bayi laki-laki di Rumah Sakit M. Jamil, Padang.">Marasai (27), wanita lumpuh bertubuh pendek asal Solok Selatan, Sumatera Barat, yang hanya memiliki tinggi 97 centimeter</div>
+                  </div>
+                  <a href="#"><img src="images/slide-3.jpg" width="440" height="283" border="0"></a></div>
+                </div>
+                
+                
+                <div class="content">
+                  <div>
+                  <div class="hl-shortd">
+                   <a href="http://news.liputan6.com/read/479750/lumpuh-seumur-hidup-perempuan-ini-lahirkan-bayi-sehat" title="Lumpuh Seumur Hidup, Perempuan Ini Lahirkan Bayi Sehat">
+                   
+        </a>
+        <div class="shortdesc" title="Marasai (27), wanita lumpuh bertubuh pendek asal Solok Selatan, Sumatera Barat, yang hanya memiliki tinggi 97 centimeter melahirkan bayi laki-laki di Rumah Sakit M. Jamil, Padang.">Marasai (27), wanita lumpuh bertubuh pendek asal Solok Selatan, Sumatera Barat, yang hanya memiliki tinggi 97 centimeter</div>
+                  </div>
+                  <a href="#"><img src="images/slide-4.jpg" width="440" height="283" border="0"></a></div>
+                </div>
+                
+                
+                <div class="content">
+                  <div>
+                  <div class="hl-shortd">
+                   <a href="http://news.liputan6.com/read/479750/lumpuh-seumur-hidup-perempuan-ini-lahirkan-bayi-sehat" title="Lumpuh Seumur Hidup, Perempuan Ini Lahirkan Bayi Sehat">
+                   
+        </a>
+        <div class="shortdesc" title="Marasai (27), wanita lumpuh bertubuh pendek asal Solok Selatan, Sumatera Barat, yang hanya memiliki tinggi 97 centimeter melahirkan bayi laki-laki di Rumah Sakit M. Jamil, Padang.">Marasai (27), wanita lumpuh bertubuh pendek asal Solok Selatan, Sumatera Barat, yang hanya memiliki tinggi 97 centimeter</div>
+                  </div>
+                  <a href="#"><img src="images/slide-5.jpg" width="440" height="283" border="0"></a></div>
+                </div>
+                
+                
+            </div>
+        </div>
+          </div>
+            
+            
+          <div class="titleterbaru"><img src="images/terbaru_icon.png" width="18" height="18"> TERBARU</div>
+            <div class="isicenter">
+            	<ul>
+                <li><span style="color:#3300FF">15.04.2013</span>
+                  <br>
+                  <span style="color:#ff0000; font-weight:bold">Info Kegiatan</span>
+                  <br>
+                  <a href="#">Warga di Kabupaten Solok mengikuti Baksos Katarak Pundi Amal SCTV</a></li>
+<li><span style="color:#3300FF">15.04.2013</span>
+  <br>
+  <span style="color:#ff0000; font-weight:bold">Info Kegiatan</span>
+  <br>
+  <a href="#">Donor Darah Pundi Am al SCTV Kota Surabaya</a></li>
+<li><span style="color:#3300FF">15.04.2013</span>
+  <br>
+  <span style="color:#ff0000; font-weight:bold">Kesehatan</span>
+  <br>
+  <a href="#">Pundi Amal SCTV, PMI Kota Yogyakarta, Plaza Ambarrukmo, Hotel Royal Ambarrukmo, Kedaulatan Rakjat Group, Unisi, Swaragama Group, Petra</a></li>
+<li><span style="color:#3300FF">15.04.2013</span>
+  <br>
+  <span style="color:#ff0000; font-weight:bold">Kesehatan</span><br>
+  <a href="#">Tim Kesehatan Pundi Amal SCTV dan Yayasan Obor Berkat Indonesia, memberikan layanan pengobatan gratis</a></li>
+<li><span style="color:#3300FF">15.04.2013</span>
+  <br>
+  <span style="color:#ff0000; font-weight:bold">Info Kegiatan</span>
+  <br>
+  <a href="#">Tim Kesehatan Pundi Amal SCTV dan Yayasan Obor Berkat Indonesia, memberikan layanan pengobatan gratis</a></li>
+                </ul>
+                
+                <span style="float:right"><a href="#">Selengkapnya</a></span><br>
+                <div class="cb"></div>
+               
+          </div>
+           <div class="calendar">
+           
+          <div id="calendar"></div>
+           </div>
+         
+         <div class="titleterbaru"><img src="images/sebelumnya_icon.png" width="21" height="21"> SEBELUMNYA</div>
+         <div class="isicenter">
+            	<ul>
+                <li><img src="images/sebelumnya1.jpg" width="144" height="81" class="fl mr6"><span style="color:#3300FF">15.04.2013</span>
+                  <br>
+                  <span style="color:#ff0000; font-weight:bold">Info Kegiatan</span>
+                  <br>
+                  <a href="#" class="isicenter">Warga di Kabupaten Solok mengikuti Baksos Katarak Pundi Amal SCTV</a></li>
+<li><img src="images/sebelumnya2.jpg" width="144" height="81" class="fl mr6"><span style="color:#3300FF">15.04.2013</span>
+  <br>
+  <span style="color:#ff0000; font-weight:bold">Info Kegiatan</span>
+  <br>
+  <a href="#" class="isicenter">Donor Darah Pundi Am al SCTV Kota Surabaya</a></li>
+
+<li><img src="images/sebelumnya3.jpg" width="144" height="81" class="fl mr6"><span style="color:#3300FF">15.04.2013</span>
+  <br>
+  <span style="color:#ff0000; font-weight:bold">Kesehatan</span><br>
+  <a href="#" class="isicenter">Tim Kesehatan Pundi Amal SCTV dan Yayasan Obor Berkat Indonesia, memberikan </a></li>
+<li><img src="images/sebelumnya4.jpg" width="144" height="81" class="fl mr6"><span style="color:#3300FF">15.04.2013</span>
+  <br>
+  <span style="color:#ff0000; font-weight:bold">Info Kegiatan</span>
+  <br>
+  <a href="#" class="isicenter">Tim Kesehatan Pundi Amal SCTV dan Yayasan Obor Berkat Indonesia, memberikan layanan pengobatan gratis</a></li>
+                </ul>
+                
+                <span style="float:right"><a href="#">Selengkapnya</a></span><br>
+                <div class="cb"></div>
+               
+          </div>
+            
+        </div>
+    </div>
+    
+    
+    <div id="leftbar-container" class="fr">
+        	
+             <div id="title-yellow">
+             	<div class="judul">DAFTAR PENYUMBANG</div>
+          </div>
+             <div id="left-content">
+               	
+<table width="250" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="42" height="30px" bgcolor="#9c9c9c"><div align="center"><strong>No</strong></div></td>
+    <td width="120" height="30px" bgcolor="#9c9c9c"><div align="center"><strong>Nama</strong></div></td>
+    <td width="88" height="30px" bgcolor="#9c9c9c"><div align="center"><strong>Jumlah</strong> (Rp)</div></td>
+  </tr>
+</table>
+<table width="250" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" bgcolor="#9c9c9c"><table width="250" border="0" cellspacing="1" cellpadding="4">
+      <tr>
+        <td width="37" bgcolor="#e9e9e9">01</td>
+        <td width="123" bgcolor="#e9e9e9">Daru Amanda</td>
+        <td width="80" bgcolor="#e9e9e9">200.000,00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF">02</td>
+        <td bgcolor="#FFFFFF">Herman Suman</td>
+        <td bgcolor="#FFFFFF">200.000,00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#e9e9e9">03</td>
+        <td bgcolor="#e9e9e9">Herman Suman</td>
+        <td bgcolor="#e9e9e9">200.000,00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF">04</td>
+        <td bgcolor="#FFFFFF">Herman Suman</td>
+        <td bgcolor="#FFFFFF">200.000,00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#e9e9e9">05</td>
+        <td bgcolor="#e9e9e9">Herman Suman</td>
+        <td bgcolor="#e9e9e9">200.000,00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF">06</td>
+        <td bgcolor="#FFFFFF">Herman Suman</td>
+        <td bgcolor="#FFFFFF">200.000,00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#e9e9e9">07</td>
+        <td bgcolor="#e9e9e9">Herman Suman</td>
+        <td bgcolor="#e9e9e9">200.000,00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF">08</td>
+        <td bgcolor="#FFFFFF">Herman Suman</td>
+        <td bgcolor="#FFFFFF">200.000,00</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<span style="float:right"><a href="#">Selengkapnya</a></span><br><br>
+
+    
+        </div>
+        
+        
+        
+        
+    </div>
+    
+    <div id="leftbar-container" class="fr">
+        	
+             <div id="title-yellow">
+             	<div class="judul">TESTIMONI</div>
+          </div>
+      <div id="left-content">
+      <div id="left-content-inside">
+      <ul>
+      <li><span style="color:#3300FF">15.04.2013</span>
+        <br>
+        <a href="#">Kegiatan Donor Darah Ramadhan Pundi Amal SCTV-PMI di Tangerang akan menghadirkan artis Pinkan Mambo yang akan menghibur para pendonor. </a></li>
+      <li><span style="color:#3300FF">15.04.2013</span>
+        <br>
+        <a href="#">Kegiatan Donor Darah Ramadhan Pundi Amal SCTV-PMI di Tangerang akan menghadirkan artis Pinkan Mambo yang akan menghibur para pendonor. </a></li>
+      <li><span style="color:#3300FF">15.04.2013</span>
+        <br>
+        <a href="#">Kegiatan Donor Darah Ramadhan Pundi Amal SCTV-PMI di Tangerang akan menghadirkan artis Pinkan Mambo yang akan menghibur para pendonor. </a></li>
+      <li><span style="color:#3300FF">15.04.2013</span>
+        <br>
+        <a href="#">Kegiatan Donor Darah Ramadhan Pundi Amal SCTV-PMI di Tangerang akan menghadirkan artis Pinkan Mambo yang akan menghibur para pendonor. </a></li>
+      </ul>
+      <span style="float:left; margin-left:145px;"><a href="#">Selengkapnya</a></span><br><br>
+       
+      </div>
+      
+      <div id="title-yellow">
+             	<div class="judul">FOTO</div>
+             </div>
+             <div id="left-content">
+               	<div id="left-content-inside1"><img src="images/foto1.jpg" width="218" height="124"></a>
+                Pundi Amal SCTV dan TNI AL, Kerjasama Dalam Kegiatan Surya Bhaskara Jaya 2012 </div>
+               <div class="horizontal1"></div>
+               
+               <div id="left-content-inside1"><img src="images/foto2.jpg" width="218" height="124"></a>
+               Pundi Amal SCTV dan TNI AL, Kerjasama Dalam Kegiatan Surya Bhaskara Jaya 2012 </div>
+               <div class="horizontal1"></div>
+               
+               <div id="left-content-inside1"><img src="images/foto4.jpg" width="218" height="124"></a>
+                Pundi Amal SCTV dan TNI AL, Kerjasama Dalam Kegiatan Surya Bhaskara Jaya 2012 </div>
+               <div class="horizontal1"></div>
+               
+               <div id="left-content-inside1"><img src="images/foto3.jpg" width="218" height="124"></a>
+               Pundi Amal SCTV dan TNI AL, Kerjasama Dalam Kegiatan Surya Bhaskara Jaya 2012 </div>
+               <span style="float:right"><a href="#">Selengkapnya</a></span>
+      
+      </div>
+        
+        
+        
+        
+    </div>
+        
+    
+  </div>
+    
+    
+    
+</div>
+<div class="cb"></div>
+</div>
+
+<div id="footer">
+<div id="runtext"></div>
+
+<div id="menu-bwh">
+              <div id="menu-footer">
+                <ul>
+                <li><a class="current" href="#">Home</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Agenda &amp; Berita</a></li>
+                <li><a href="#">Galeri</a>
+                </li>
+                <li><a href="#">Daftar Penyumbang</a></li>
+                <li><a href="#">Tetimoni</a></li>
+                <li><a href="#">Mitra</a></li>
+                </ul>
+              </div>
+      </div>
+      
+      <div id="menu-bwh2">
+              <div id="menu-footer2">
+                <ul>
+                <li>Kunjungi Juga :</li>
+                <li><a href="#">scm</a></li>
+                <li><a href="#">liputan6</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">bola</a>                </li>
+                <li><a href="#">tv &amp; showbiz</a></li>
+                <li><a href="#">tekno</a></li>
+                <li><a href="#">health</a></li>
+                <li><a href="#">video</a></li>
+                </ul>
+        </div>
+      </div>
+      
+     <div id="menu-bwh" style="text-align:center; padding-top:10px; padding-bottom:10px"> Copyright © 2013 SCTV ® All Rights Reserved.
+Liputan 6 is a Program of Surya Citra Televisi, Subsidiary Company of PT Surya Citra Media, Tbk.
+Created & Developed by SCTV Multimedia & Liputan6 Website Team </div><br>
+
+</div>
+
+    <!--<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>-->
+
+</div>
+</body>
+
+<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="js/utility.js"></script>
+
+</html>

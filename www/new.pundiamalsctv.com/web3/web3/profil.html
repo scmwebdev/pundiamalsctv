@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pundi Amal SCTV</title>
+<meta charset="utf-8">
+  
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/stylenivo.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/slidehl.css" type="text/css">
+
+
+
+<link href="css/fullcalendar.css" rel="stylesheet" />
+<link href="css/fullcalendar.print.css" rel="stylesheet" media="print" />
+<script src="jquery/jquery-1.9.1.min.js"></script>
+<script src="jquery/jquery-ui-1.10.2.custom.min.js"></script>
+<script src="js/fullcalendar.min.js"></script>
+<script>
+
+	$(document).ready(function() {
+	
+		var date = new Date();
+		var d = date.getDate();
+		var m = date.getMonth();
+		var y = date.getFullYear();
+		
+		$('#calendar').fullCalendar({
+			editable: true,
+			events: [
+				{
+					title: 'All Day Event',
+					start: new Date(y, m, 1)
+				},
+				{
+					title: 'Long Event',
+					start: new Date(y, m, d-5),
+					end: new Date(y, m, d-2)
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: new Date(y, m, d-3, 16, 0),
+					allDay: false
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: new Date(y, m, d+4, 16, 0),
+					allDay: false
+				},
+				{
+					title: 'Meeting',
+					start: new Date(y, m, d, 10, 30),
+					allDay: false
+				},
+				{
+					title: 'Lunch',
+					start: new Date(y, m, d, 12, 0),
+					end: new Date(y, m, d, 14, 0),
+					allDay: false
+				},
+				{
+					title: 'Birthday Party',
+					start: new Date(y, m, d+1, 19, 0),
+					end: new Date(y, m, d+1, 22, 30),
+					allDay: false
+				},
+				{
+					title: 'Click for Google',
+					start: new Date(y, m, 28),
+					end: new Date(y, m, 29),
+					url: 'http://google.com/'
+				}
+			]
+		});
+		
+	});
+
+</script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+    
+    <link rel="stylesheet" type="text/css" href="css/anylinkcssmenu.css" />
+<script type="text/javascript" src="js/anylinkcssmenu.js"></script>
+
+<script type="text/javascript">
+//anylinkcssmenu.init("menu_anchors_class") ////Pass in the CSS class of anchor links (that contain a sub menu)
+anylinkcssmenu.init("anchorclass")
+</script>
+
+
+<style type="text/css">
+<!--
+.style1 {color: #0166a1}
+-->
+</style></head>
+
+<body>
+
+<div id="wrapper">
+  <div id="container">
+    <div id="top">
+   	  <div id="logo" class="fl"><img src="images/logo_pundiamal.png"></div>
+          <form method="get" action="/search" id="search" style="width:200px; float:left; margin-left:500px; margin-top:30px">
+            <input name="q" type="text" size="40" placeholder="Search..." />
+          </form>
+          <div id="logo-sctv" class="fl" style="padding-top:20px; padding-left:15px"><img src="images/logo_sctv.png"></div>
+            
+          <div id="menu" class="fl">
+              <div id="menu-atas">
+              <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#" class="anchorclass current" rel="submenu1">PROFIL</a></li>
+                <li><a href="#">AGENDA & BERITA</a></li>
+                <li><a href="#" class="anchorclass" rel="submenu2">GALERI</a></li>
+                <li><a href="#">DAFTAR PENYUMBANG</a></li>
+                <li><a href="#">TESTIMONI</a></li>
+                <li><a href="#">MITRA</a></li>
+                </ul>
+              </div>
+      </div>
+    </div>
+        
+    <div id="header">
+    	<div id="header-inside">   
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <a href="http://www.yahoo.com"><img src="images/slide1.jpg" title="Memberikan Layanan Kesehatan Gratis" /></a>
+               <a href="http://www.yahoo.com"> <img src="images/slide2.jpg" title="Membantu Pengembangan Pendidikan Karakter" /></a>
+                <a href="http://www.yahoo.com"><img src="images/slide3.jpg" title="This is an example of a caption" /></a>
+               <a href="http://www.yahoo.com"> <img src="images/slide4.jpg" title="This is an example of a caption" /></a>
+                
+                
+            </div>
+            
+        </div>
+             </div>
+    </div>
+    <div id="shadow"></div>
+    <div id="runtext"></div>
+    
+    <div id="content">
+    	<div id="insidepage-container" class="fl">
+        	
+             <div id="title-insidepage">
+             	<div class="judul">PROFIL</div>
+          </div>
+             <div id="insidepage-content">
+               	<div id="insidepage-inside">
+                 
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint   occaecat cupidatat non proident, sunt in culpa qui officia deserunt   mollit anim id est laborum<span class="style1">.</span></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint   occaecat cupidatat non proident, sunt in culpa qui officia deserunt   mollit anim id est laborum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint   occaecat cupidatat non proident, sunt in culpa qui officia deserunt   mollit anim id est laborum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint   occaecat cupidatat non proident, sunt in culpa qui officia deserunt   mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint   occaecat cupidatat non proident, sunt in culpa qui officia deserunt   mollit anim id est laborum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint   occaecat cupidatat non proident, sunt in culpa qui officia deserunt   mollit anim id est laborum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint   occaecat cupidatat non proident, sunt in culpa qui officia deserunt   mollit anim id est laborum</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint   occaecat cupidatat non proident, sunt in culpa qui officia deserunt   mollit anim id est laborum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim   veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea   commodo consequat. Duis aute irure dolor in reprehenderit in voluptate   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint   occaecat cupidatat non proident, sunt in culpa qui officia deserunt   mollit anim id est laborum</p>
+                 
+                 
+                 
+                  <div class="horizontal3"></div>
+                   <span style="font-size:18px; font-weight:bold; color:#000000"> Kontak Kami</span>
+
+          <br>
+          SCTV Tower - Senayan City<br>
+Jl. Asia Afrika Lot. 19
+Jakarta 12970<br>
+<br>
+<span style="font-weight:bold"> NOMOR REKENING PUNDI AMAL SCTV</span><br>
+ REK. NO : 1020 0691 92000
+ BANK MANDIRI, SENAYAN CITY
+
+ <br>
+ REK. NO : 084 266 2000
+BCA, KCU WISMA ASIA, SLIPI
+
+
+<br>
+<br>
+<span style="text-align:center; color:#FF0000; font-weight:bold">HATI HATI TERHADAP PENIPUAN YANG MENGATASNAMAKAN
+REKENING PUNDI AMAL SCTV. UNTUK MENERIMA SUMBANGAN,
+KAMI TIDAK PERNAH MEMBUKA REKENING ATAS NAMA PERORANGAN.   </span>
+                 
+          </div>
+          
+         
+                 
+				<div class="cb"></div>
+               </div>
+                
+                
+                	</div>
+    
+        <div id="rightbar-container">
+        	
+             <div id="title-yellow">
+             	<div class="judul">DAFTAR PENYUMBANG</div>
+          </div>
+             <div id="left-content">
+               	
+<table width="250" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="42" height="30px" bgcolor="#9c9c9c"><div align="center"><strong>No</strong></div></td>
+    <td width="120" height="30px" bgcolor="#9c9c9c"><div align="center"><strong>Nama</strong></div></td>
+    <td width="88" height="30px" bgcolor="#9c9c9c"><div align="center"><strong>Jumlah</strong> (Rp)</div></td>
+  </tr>
+</table>
+<table width="250" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" bgcolor="#9c9c9c"><table width="250" border="0" cellspacing="1" cellpadding="4">
+      <tr>
+        <td width="37" bgcolor="#e9e9e9">01</td>
+        <td width="123" bgcolor="#e9e9e9">Daru Amanda</td>
+        <td width="80" bgcolor="#e9e9e9">200.000,00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF">02</td>
+        <td bgcolor="#FFFFFF">Herman Suman</td>
+        <td bgcolor="#FFFFFF">200.000,00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#e9e9e9">03</td>
+        <td bgcolor="#e9e9e9">Herman Suman</td>
+        <td bgcolor="#e9e9e9">200.000,00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF">04</td>
+        <td bgcolor="#FFFFFF">Herman Suman</td>
+        <td bgcolor="#FFFFFF">200.000,00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#e9e9e9">05</td>
+        <td bgcolor="#e9e9e9">Herman Suman</td>
+        <td bgcolor="#e9e9e9">200.000,00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF">06</td>
+        <td bgcolor="#FFFFFF">Herman Suman</td>
+        <td bgcolor="#FFFFFF">200.000,00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#e9e9e9">07</td>
+        <td bgcolor="#e9e9e9">Herman Suman</td>
+        <td bgcolor="#e9e9e9">200.000,00</td>
+      </tr>
+      <tr>
+        <td bgcolor="#FFFFFF">08</td>
+        <td bgcolor="#FFFFFF">Herman Suman</td>
+        <td bgcolor="#FFFFFF">200.000,00</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<span style="float:right"><a href="#">Selengkapnya</a></span><br><br>
+
+    
+        </div>
+        
+       
+        
+        <div id="title-yellow">
+             	<div class="judul">TERBARU</div>
+          </div>
+      <div id="left-content">
+      <div id="left-content-insidepage">
+      <ul>
+      <li><span style="color:#3300FF"><img src="images/sebelumnya1.jpg" width="144" height="81" class="fl mr6">15.04.2013</span>
+        <br>
+        <a href="#">Kegiatan Donor Darah Ramadhan Pundi Amal SCTV-PMI di Tangerang akan menghadirkan artis Pinkan Mambo yang akan menghibur para pendonor. </a></li>
+      <li><span style="color:#3300FF"><img src="images/sebelumnya2.jpg" width="144" height="81" class="fl mr6">15.04.2013</span>
+        <br>
+        <a href="#">Kegiatan Donor Darah Ramadhan Pundi Amal SCTV-PMI di Tangerang akan menghadirkan artis Pinkan Mambo yang akan menghibur para pendonor. </a></li>
+      <li><span style="color:#3300FF"><img src="images/sebelumnya3.jpg" width="144" height="81" class="fl mr6">15.04.2013</span>
+        <br>
+        <a href="#">Kegiatan Donor Darah Ramadhan Pundi Amal SCTV-PMI di Tangerang akan menghadirkan artis Pinkan Mambo yang akan menghibur para pendonor. </a></li>
+      
+      </ul>
+      <span style="float:left; margin-left:145px;"><a href="#">Selengkapnya</a></span><br><br>
+       
+      </div>
+      
+      </div>
+      
+      
+       <div id="title-yellow">
+             	<div class="judul">INFO KEGIATAN</div>
+          </div>
+      <div id="left-content">
+      <div id="left-content-insidepage">
+      <ul>
+      <li><span style="color:#3300FF">15.04.2013</span>
+        <br>
+        <a href="#">Kegiatan Donor Darah Ramadhan Pundi Amal SCTV-PMI di Tangerang akan menghadirkan artis Pinkan Mambo yang akan menghibur para pendonor. </a></li>
+      <li><span style="color:#3300FF">15.04.2013</span>
+        <br>
+        <a href="#">Kegiatan Donor Darah Ramadhan Pundi Amal SCTV-PMI di Tangerang akan menghadirkan artis Pinkan Mambo yang akan menghibur para pendonor. </a></li>
+      <li><span style="color:#3300FF">15.04.2013</span>
+        <br>
+        <a href="#">Kegiatan Donor Darah Ramadhan Pundi Amal SCTV-PMI di Tangerang akan menghadirkan artis Pinkan Mambo yang akan menghibur para pendonor. </a></li>
+      
+      </ul>
+      <span style="float:left; margin-left:145px;"><a href="#">Selengkapnya</a></span><br><br>
+       
+      </div>
+      
+      </div>
+        </div>
+    <div class="cb"></div>
+    </div>
+    <div class="cb"></div>
+</div>
+
+<div id="footer">
+<div id="runtext"></div>
+
+<div id="menu-bwh">
+              <div id="menu-footer">
+                <ul>
+                <li><a class="current" href="#">Home</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Agenda &amp; Berita</a></li>
+                <li><a href="#">Galeri</a>
+                </li>
+                <li><a href="#">Daftar Penyumbang</a></li>
+                <li><a href="#">Tetimoni</a></li>
+                <li><a href="#">Mitra</a></li>
+                </ul>
+              </div>
+      </div>
+      
+      <div id="menu-bwh2">
+              <div id="menu-footer2">
+                <ul>
+                <li>Kunjungi Juga :</li>
+                <li><a href="#">scm</a></li>
+                <li><a href="#">liputan6</a></li>
+                <li><a href="#">news</a></li>
+                <li><a href="#">bola</a>                </li>
+                <li><a href="#">tv &amp; showbiz</a></li>
+                <li><a href="#">tekno</a></li>
+                <li><a href="#">health</a></li>
+                <li><a href="#">video</a></li>
+                </ul>
+        </div>
+      </div>
+      
+     <div id="menu-bwh" style="text-align:center; padding-top:10px; padding-bottom:10px"> Copyright © 2013 SCTV ® All Rights Reserved.
+Liputan 6 is a Program of Surya Citra Televisi, Subsidiary Company of PT Surya Citra Media, Tbk.
+Created & Developed by SCTV Multimedia & Liputan6 Website Team </div><br>
+
+</div>
+
+    <!--<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>-->
+
+</div>
+
+<div id="submenu1" class="anylinkcss">
+<ul>
+<li><a href="http://www.liputan6.com/">Sejarah</a></li>
+<li><a href="http://www.liputan6.com/">Kontak</a></li>
+</ul>
+</div>
+
+
+<div id="submenu2" class="anylinkcss">
+<ul>
+<li><a href="http://www.liputan6.com/">Foto</a></li>
+<li><a href="http://www.liputan6.com/">Video</a></li>
+</ul>
+</div>
+
+</body>
+
+<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="js/utility.js"></script>
+
+</html>
