@@ -1,0 +1,22 @@
+
+server {
+	listen   80; ## listen for ipv4; this line is default and implied
+	root /usr/share/nginx/www/kmk;
+	index index.html index.htm index.php;
+	server_name booking.kmkonline.co.id;
+
+	location / {
+		try_files $uri $uri/ /index.php;
+	}
+
+	location ~ \.php$ {
+		fastcgi_split_path_info ^(.+\.php)(/.+)$;
+	#	fastcgi_pass 127.0.0.1:9000;
+		fastcgi_pass unix:/var/run/php5-fpm.sock;
+		fastcgi_index index.php;
+		include fastcgi_params;
+	}
+
+}
+
+
