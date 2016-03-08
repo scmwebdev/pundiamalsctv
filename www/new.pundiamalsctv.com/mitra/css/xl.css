@@ -1,0 +1,62 @@
+body {
+	background:#bdceff; 
+	font-family: Arial, sans-serif;
+	color:#000000;
+	margin:0;
+	font-size:13px;
+	line-height: 18px;
+
+}
+
+#wrapper {
+}
+
+#container {
+ 	margin: 0 auto;
+	width: 800px;
+	
+}
+
+#top-xl {
+
+	width:800px;
+	height:151px;
+	background:url(../images/xl-top.jpg) no-repeat;
+	}
+	
+#content {
+	background:#FFFFFF;
+	padding:14px 14px 10px 14px;
+
+}
+	
+.fl {
+
+	float:left;
+}
+
+.fr {
+
+	float:right;
+}
+
+.cb {
+	clear:both;
+}
+
+.mr6 {
+	margin-right:6px;
+}
+
+.mr30 {
+	margin-right:30px;
+}
+
+#footer-xl {
+	width:800px;
+	height:73px;
+	margin: 0 auto;
+	background:url(../images/xl-bottom.jpg) no-repeat;
+	
+}
+

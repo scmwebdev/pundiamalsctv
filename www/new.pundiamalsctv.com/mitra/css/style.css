@@ -1,0 +1,109 @@
+body {
+	background:#dce5fd; 
+	font-family: Arial, sans-serif;
+	color:#000000;
+	margin:0;
+	font-size:13px;
+	line-height: 18px;
+
+}
+
+#wrapper {
+}
+
+#container {
+ 	margin: 0 auto;
+	width: 800px;
+	
+}
+
+
+#top-teleplan {
+
+	width:800px;
+	height:151px;
+	background:url(../images/teleplan-top.jpg) no-repeat;
+	}
+
+#top-xl {
+
+	width:800px;
+	height:151px;
+	background:url(../images/xl-top.jpg) no-repeat;
+	}
+	
+#top-mandiri {
+
+	width:800px;
+	height:151px;
+	background: url(../images/mandiri-top.jpg) no-repeat;
+	}
+	
+#top-hsbc {
+
+	width:800px;
+	height:151px;
+	background:  url(../images/hsbc-top.jpg) no-repeat;
+	}
+	
+#content {
+	background:#FFFFFF;
+	padding:14px 14px 10px 14px;
+
+}
+	
+.fl {
+
+	float:left;
+}
+
+.fr {
+
+	float:right;
+}
+
+.cb {
+	clear:both;
+}
+
+.mr6 {
+	margin-right:6px;
+}
+
+.mr30 {
+	margin-right:30px;
+}
+
+#footer-xl {
+	width:800px;
+	height:73px;
+	margin: 0 auto;
+	background:url(../images/xl-bottom.jpg) no-repeat;
+	
+}
+
+#footer-mandiri {
+	width:800px;
+	height:73px;
+	margin: 0 auto;
+	background: url(../images/mandiri-bottom.jpg) no-repeat;
+	
+}
+
+#footer-hsbc {
+	width:800px;
+	height:73px;
+	margin: 0 auto;
+	background:  url(../images/hsbc-bottom.jpg) no-repeat;
+	
+}
+
+#footer-teleplan {
+	width:800px;
+	height:73px;
+	margin: 0 auto;
+	background:  url(../images/teleplan-bottom.jpg) no-repeat;
+	
+}
+
+
