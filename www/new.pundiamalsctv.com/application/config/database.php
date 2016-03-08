@@ -50,7 +50,7 @@ $active_record = TRUE;
 
 $db['DB_WRITE']['hostname'] = 'localhost';
 $db['DB_WRITE']['username'] = 'root';
-$db['DB_WRITE']['password'] = '';
+$db['DB_WRITE']['password'] = 'root';
 $db['DB_WRITE']['database'] = 'pundiamalsctv_www';
 $db['DB_WRITE']['dbdriver'] = 'mysql';
 $db['DB_WRITE']['dbprefix'] = '';
@@ -66,7 +66,7 @@ $db['DB_WRITE']['stricton'] = FALSE;
 
 $db['DB_READ']['hostname'] = 'localhost';
 $db['DB_READ']['username'] = 'root';
-$db['DB_READ']['password'] = '';
+$db['DB_READ']['password'] = 'root';
 $db['DB_READ']['database'] = 'intra_humas';
 $db['DB_READ']['dbdriver'] = 'mysql';
 $db['DB_READ']['dbprefix'] = '';

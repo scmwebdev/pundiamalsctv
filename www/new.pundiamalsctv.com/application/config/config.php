@@ -1,11 +1,8 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-//$config['base_url']             = "http://localhost/kmk/web/new.pundiamalsctv.com/";	
-$root  = "http://".$_SERVER['HTTP_HOST'];
-$root .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
-$config['base_url']    = "$root";
+$config['base_url']    			= "http://machina:8084";
 $config['index_page']           = "";
-$config['uri_protocol']	= 'AUTO';
+$config['uri_protocol']			= 'AUTO';
 //$config['uri_protocol']         = "REQUEST_URI";
 $config['url_suffix']           = "";
 $config['language']             = "english";
@@ -14,7 +11,7 @@ $config['enable_hooks']         = FALSE;
 $config['subclass_prefix']      = 'MY_';
 $config['permitted_uri_chars']  = 'a-z 0-9~%.:_\+\=\-';
 
-$config['enable_query_strings'] = FALSE;
+$config['enable_query_strings'] = TRUE;
 $config['directory_trigger']    = 'd';
 $config['controller_trigger']   = 'c';
 $config['function_trigger']     = 'm';

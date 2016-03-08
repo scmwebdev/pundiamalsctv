@@ -10,13 +10,13 @@ class CI_Ivmcache {
 	protected $memcached = array(
                             	'servers' => array(
                 				    'default' => array(
-            				            'host'          => '192.168.7.12',
+            				            'host'          => 'localhost',
             				            'port'          => '11211',
             				            'weight'        => '1',
             				            'persistent'    => FALSE 
                 				    ),
                 				    'backup' => array(
-            				            'host'          => '192.168.7.11',
+            				            'host'          => 'localhost',
             				            'port'          => '11211',
             				            'weight'        => '1',
             				            'persistent'    => FALSE 
