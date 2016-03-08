@@ -1,0 +1,31 @@
+#paging {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#paging li {
+    display: block;
+    float: left;
+}
+#paging li strong {
+    background: none repeat scroll 0 0 #719BCD;
+    border: 1px solid #CCCCCC;
+    color: #FFFFFF;
+    float: left;
+    margin-right: -10px;
+    padding: 2px 5px;
+}
+#paging li a {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #CCCCCC;
+    color: #222222;
+    float: left;
+    margin-right: -10px;
+    padding: 2px 5px;
+    text-decoration: none;
+}
+#paging li a:hover {
+    background: none repeat scroll 0 0 #719BCD;
+    border: 1px solid #333333;
+    color: #FFFFFF;
+}
