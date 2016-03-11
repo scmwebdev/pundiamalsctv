@@ -1,14 +1,14 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
-set :application, 'indosiarpeduli'
+set :application, 'pundiamalsctv'
 set :repo_url, 'https://github.com/scmwebdev/pundiamalsctv.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/home/dodo/indosiarpeduli'
+set :deploy_to, '/home/dodo/pundiamalsctv'
 
 # Default value for :scm is :git
 # set :scm, :git
