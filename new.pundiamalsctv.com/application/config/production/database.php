@@ -1,4 +1,7 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+include (BASEPATH.'../env.php');
+
 /*
 | -------------------------------------------------------------------
 | DATABASE CONNECTIVITY SETTINGS
@@ -51,9 +54,9 @@ $active_record = TRUE;
 // $db['DB_WRITE']['hostname'] = '202.58.124.66';
 // $db['DB_WRITE']['username'] = 'internetDEV';
 // $db['DB_WRITE']['password'] = 'arjuna2774';
-$db['DB_WRITE']['hostname'] = "localhost";
-$db['DB_WRITE']['username'] = "root";
-$db['DB_WRITE']['password'] = "root";
+$db['DB_WRITE']['hostname'] = $env_config['db_host'];
+$db['DB_WRITE']['username'] = $env_config['db_user'];
+$db['DB_WRITE']['password'] = $env_config['db_pass'];
 $db['DB_WRITE']['database'] = 'pundiamalsctv_www';
 $db['DB_WRITE']['dbdriver'] = 'mysql';
 $db['DB_WRITE']['dbprefix'] = '';
@@ -70,9 +73,9 @@ $db['DB_WRITE']['stricton'] = FALSE;
 // $db['DB_READ']['hostname'] = "202.58.124.66";
 // $db['DB_READ']['username'] = "internetDEV";
 // $db['DB_READ']['password'] = "arjuna2774";
-$db['DB_READ']['hostname'] = "localhost";
-$db['DB_READ']['username'] = "root";
-$db['DB_READ']['password'] = "root";
+$db['DB_READ']['hostname'] = $env_config['db_host'];
+$db['DB_READ']['username'] = $env_config['db_user'];
+$db['DB_READ']['password'] = $env_config['db_pass'];
 $db['DB_READ']['database'] = "intra_humas";
 $db['DB_READ']['dbdriver'] = "mysql";
 $db['DB_READ']['dbprefix'] = "";
