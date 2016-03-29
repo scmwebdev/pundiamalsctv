@@ -44,11 +44,12 @@
 				  $slug = url_title($v['title'], 'dash', true);
 				  //print_r($slug);
 				  ?>
-                <a href="<?php echo base_url('index.php/galeri/view_video/'.$v['id'].'/'.$slug); ?>"><div id="play-btn-small"></div>
+                <a href="<?php echo base_url('index.php/galeri/view_video/'.$v['id'].'/'.$slug); ?>">
+                <div id="play-btn-small"></div>
                 <?php if(empty($v['loc_pic'])){?>
                    <img src="<?php echo site_url();?>images/pundi-amal.jpg" width="218" height="124">
                 <?php }else{?>
-                <img src="http://static.pundiamalsctv.com<?php echo $v['loc_tpic']; ?>" width="218" height="124">
+                <img src="<?php echo base_url() . 'assets' ?><?php echo $v['loc_tpic']; ?>" width="218" height="124">
                 <?php } ?>
                 </a>
                 <a href="<?php echo base_url('index.php/galeri/view_video/'.$v['id'].'/'.$slug); ?>">
