@@ -1,0 +1,40 @@
+@charset "utf-8";
+body, h1, h2, h3, h4, h5	{ margin:0; padding:0; }
+body	{ font-family:'lucida_sansregular' , Arial, Helvetica, sans-serif; background:#000; }
+
+/* s: history */
+a.detail-hist	{ display:block; width:60px; margin:3px 0 0; padding:3px 0; background:#8dc63f; text-align:center; font:normal 13px 'lucida_sansregular' , Arial, Helvetica, sans-serif; color:#fff; text-decoration:none; border-radius:3px;  }
+a:hover.detail-hist	{ display:block; width:60px; padding:3px 0; background:#2aa00b; text-align:center; font:normal 13px 'lucida_sansregular' , Arial, Helvetica, sans-serif; color:#fff; text-decoration:none; border-radius:3px;  }
+.history	{ width:320px; float:right; padding:15px 5px; }
+.history table	{ background:#f3f3f3; width:300px;border-radius:10px; padding:15px 10px; font:normal 13px 'lucida_sansregular' , Arial, Helvetica, sans-serif; color:#000;  }
+.history strong	{ font:normal 12px 'lucida_sansdemibold_roman' , Arial, Helvetica, sans-serif; color:#000;}
+.history h2.hist	{ font:normal 22px/22px 'lucida_sansdemibold_roman' , Arial, Helvetica, sans-serif; margin:0; padding:0 0 10px 10px; }
+.history table td	{ padding:5px 5px; vertical-align:top; }
+
+.history-pack	{ width:630px; padding:15px 20px 25px 15px; border:3px dotted #8dc63f; }
+.history-pack h2.hist	{ color:#010101; font:normal 18px/22px 'lucida_sansdemibold_roman' , Arial, Helvetica, sans-serif; padding:0 0 15px 0; }
+.history-pack table.paket	{ border-top:5px solid #8fca1c; border-radius:5px; background:#f4f4f4; font:normal 13px/20px 'lucida_sansregular' , Arial, Helvetica, sans-serif; }
+.history-pack table.paket strong	{ font:normal 14px/20px 'lucida_sansdemibold_roman' , Arial, Helvetica, sans-serif; }
+.history-pack table.paket td	{ padding:7px 20px; }
+.history-pack table.paket tr.jlh	{ background:#bfe985; color:#355b00; font:normal 14px/22px 'lucida_sansdemibold_roman' , Arial, Helvetica, sans-serif; }
+.history-pack table.paket tr h3	{ font:normal 14px/22px 'lucida_sansdemibold_roman' , Arial, Helvetica, sans-serif; }
+.history-pack table.paket td span	{ padding:0 10px; font:normal 10px/20px 'lucida_sansdemibold_roman' , Arial, Helvetica, sans-serif; }
+.history-pack table.paket td.p-0	{ padding:0; }
+.bg-green	{ background:#8fca1c; }
+.c-white	{ color:#fff; }
+/* e: history */
+
+
+a.buy	{ background:url(../images/btn-buy.png) no-repeat 0 0; width:153px; height:146px; display:block; z-index:10; margin:-300px 0 0 350px; z-index:9999; position:absolute; }
+a:hover.buy	{ background:url(../images/btn-buy.png) no-repeat 0 -146px; width:153px; height:146px; display:block;}
+
+a.buy2	{ background:url(../images/btn-buy.png) no-repeat 0 0; width:153px; height:146px; display:block; margin-left:auto; margin-right:auto; }
+a:hover.buy2	{ background:url(../images/btn-buy.png) no-repeat 0 -146px; width:153px; height:146px; display:block; }
+
+a.saksikan	{ background:url(../images/btn-saksikan.png) no-repeat 0 0; width:153px; height:146px; display:block; z-index:10; margin:-300px 0 0 350px; position:absolute; }
+a:hover.saksikan	{ background:url(../images/btn-saksikan.png) no-repeat 0 -146px; width:153px; height:146px; display:block;}
+
+
+/************ s: SCHEDULE ************/
+table.schedule	{ width:910px; color:#000; font:normal 13px 'lucida_sansdemibold_roman' , Arial, Helvetica, sans-serif; }
+/************ e: SCHEDULE ************/

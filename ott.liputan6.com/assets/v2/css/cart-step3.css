@@ -1,0 +1,25 @@
+#content-cart {
+width:1000px;
+padding:20px;
+
+}
+
+#cart-step-active {
+    background-color: #000000;
+    border-radius: 17.5px 17.5px 17.5px 17.5px;
+    color: #FFFFFF;
+    height: 35px;
+    left: -37px;
+    line-height: 35px;
+    text-align: center;
+    top: -7px;
+    width: 35px;
+}
+
+
+#cart-step-line-active {
+    border-bottom: 2px solid #727272;
+}
+#cart-step-line-inactive {
+    border-bottom: 2px solid #BBBBBB;
+}
