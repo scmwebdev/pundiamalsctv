@@ -1,0 +1,103 @@
+/*  
+Theme Name: WP Inspirat
+Theme URI: http://wp-design.org/portfolio/wp-inspirat/
+Description: A <a href="http://wp-design.org/portfolio/wp-inspirat/" title="WP inspirat">bright and clean theme</a> for those who want to keep it simple.
+Author: WP Design
+Author URI: http://wp-design.org/
+
+WP Inspirat
+http://wp-design.org/portfolio/wp-inspirat/
+
+*/
+
+* { margin:0; padding:0;}
+body { font:normal 13px Georgia, "Times New Roman", Times, serif; color:#041E25; background:url(images/bg.png) repeat-x left top;}
+a { color:#4CC4E8; text-decoration:none;}
+a:hover { color:#1C4EA1;}
+h1, h2, h3, h4, h5, h6 { font:normal 25px Georgia, "Times New Roman", Times, serif;  letter-spacing:-1px; text-transform:uppercase;}
+hr { display:none;}
+ul, ol { list-style:none;}
+abbr { border:0;}
+input, select, textarea { font:normal 18px 'Trebuchet MS', Arial, Helvetica, sans-serif; color:#666; padding:5px 8px}
+small { font-size:10px; text-transform:uppercase;}
+
+#page { }
+#header { padding:50px; }
+#header #headerimg { }
+#header h1 { font-size:48px; text-transform:none; letter-spacing:-2px;}
+#header .description {  }
+
+#container { position:relative;}
+#content { padding:0 50px 100px 50px; width:500px;  float:left; }
+.narrowcolumn { }
+.widecolumn {  }
+
+.post { margin-bottom:50px; clear:both;}
+.post h2 { background:url(images/bg_post.png) no-repeat left bottom; padding-bottom:20px }
+.post h2 a {color:#1C4EA1; }
+.post h2 a:hover {color:#4CC4E8;}
+.post small { font-size:10px; text-transform:uppercase;}
+.post .entry { margin-top:15px;}
+.post .entry img { float:left; margin:0 10px 5px 0;}
+.post .entry p { margin-bottom:15px; }
+.post .postmetadata { font-size:10px; text-transform:uppercase; clear:both; }
+.post .entry ul { padding:0 0 0 40px; margin-bottom:15px; list-style-type:disc}
+.post .entry ol { padding:0 0 0 40px; margin-bottom:15px; list-style-type: decimal}
+code { font-size:11px ; }
+blockquote { background:#f6f6f6 url(images/dot-blue.gif) repeat-x;  font-style:italic; }
+blockquote p:first-letter { font-size:25px; text-transform:uppercase}
+blockquote p { margin:0; padding:15px;}
+
+
+.navigation { position:absolute; left:50px; bottom:-1px;}
+.navigation a { background:url(images/tab.png) no-repeat ; color:#fff; float:left; padding:10px 0; width:161px; text-align:center; margin-right:3px;}
+
+.center { text-align:center  }
+.pagetitle { margin-bottom:30px}
+.wp-smiley { float:none!important; vertical-align:middle;}
+
+#sidebar { float:left; font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; padding-bottom:100px; width:270px; }
+#sidebar a { color:#1C4EA1; background:url(images/dot-blue.gif) repeat-x left bottom; padding:1px 0; }
+#sidebar a:hover { color:#4CC4E8; background:none;}
+#sidebar ul li { padding:3px 0;}
+#sidebar ul li ul li ul li { font-size:11px; padding:0 0 0 3px;}
+#sidebar ul li ul li ul li a { background:none}
+
+#sidebar #searchform { margin-bottom:30px; width:300px;}
+#s { border:1px solid #A7A6AA;}
+#searchsubmit { cursor:pointer; padding:3px}
+.pagenav, .archives, .categories, .linkcat {margin-bottom:30px;}
+
+#footer { clear:both; background:#0A323E url(images/bg-footer.png) repeat-x; color:#fff; padding:50px}
+*html #footer { background:#062833 url(images/bg-footer.png) repeat-x; }
+#footer a { color:#fff; background:url(images/dot-white.gif) repeat-x left bottom; padding:1px 0; }
+#footer a:hover { color:#fff; background:none;}
+#footer ul { font-family:'Trebuchet MS', Arial, Helvetica, sans-serif}
+#footer li { padding:3px 0;}
+
+#about { width:500px; float:left; margin-right:50px; background:url(images/q-left.gif) no-repeat left top; font:italic normal  17px Georgia, "Times New Roman", Times, serif; }
+#about p { background:url(images/q-right.gif) no-repeat right bottom; padding:30px 44px;}
+#about div.copy { background:url(images/dot-white.gif) repeat-x left top; font:normal 13px 'Trebuchet MS', Arial, Helvetica, sans-serif; margin:0 44px; padding-top:15px;}
+#about div.copy a { background:none;}
+#meta { float:left }
+#rss { position:absolute; outline:none; left:590px; bottom:0; display:block; width:113px; height:83px; background:url(images/feed-icon.jpg) no-repeat left top ; text-indent:-9999px;}
+
+.commentlist {  margin-bottom:50px }
+.commentlist li { padding:10px 0; background:url(images/dot-blue.gif) repeat-x left bottom}
+.commentlist cite { font:italic normal 17px Georgia, "Times New Roman", Times, serif; }
+.commentlist li ol { margin:0;}
+.commentlist li ol li { padding:0; background:none;}
+.commentlist li ul { margin:0;}
+.commentlist li ul li { padding:0; background:none;}
+.commentlist li blockquote { margin:0; padding:0; background:none;}
+
+#commentform p { margin-bottom:5px;}
+#commentform label { cursor:pointer}
+#author, #email, #url, #comment {border:1px solid #A7A6AA; vertical-align:middle}
+#comment { width:480px; overflow:auto}
+#submit { padding:3px; cursor:pointer}
+
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0;height: 0; }
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%;}

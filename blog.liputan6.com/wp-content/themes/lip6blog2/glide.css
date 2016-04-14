@@ -1,0 +1,70 @@
+#slider	{ 
+
+height: 234px; 
+overflow: hidden;
+position: relative; 
+margin: 0px 0; 
+
+		}
+
+.stepcarousel{
+position: relative; /*leave this value alone*/
+overflow: scroll; /*leave this value alone*/
+width: 648px; /*Width of Carousel Viewer itself*/
+height: 225px; /*Height should enough to fit largest content's height*/
+margin: 0px 5px 0px 5px;
+background:#fff url(images/feat.png) top right no-repeat ;
+border:1px solid #bbb; 
+}
+
+.stepcarousel .belt{
+position: absolute; /*leave this value alone*/
+left: 0;
+top: 0;
+}
+
+.stepcarousel .panel{
+float: left; /*leave this value alone*/
+overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+margin: 10px 25px ; /*margin around each panel*/
+width:600px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+background:transparent;
+height:210px;
+
+}
+.stepcarousel .panel p{
+text-align: left; /*leave this value alone*/
+overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+margin:0px 5px 0px 10px;
+line-height:20px;
+color:#555;
+font-family:Tahoma,georgia, Helvetica, Sans-Serif; 
+font-size: 13px; 
+}
+
+.stepcarousel .panel h2{
+	font-family:georgia, Helvetica, Sans-Serif; 
+	font-size: 20px; 
+	color: #333; 
+	padding:5px 0px;
+	margin:5px 0px 0px 0px;
+	overflow:hidden;
+
+}
+.stepcarousel .panel h2 a:link, .stepcarousel .panel h2 a:visited  {
+	color:#333;
+	background-color: transparent;
+	}
+.stepcarousel .panel img{
+
+
+	background:#D4D4D4; 
+	padding:5px 5px;
+	border:1px solid #ccc;
+	float:left;
+	margin:5px 5px 5px  0px;
+}
+
+
+
+	

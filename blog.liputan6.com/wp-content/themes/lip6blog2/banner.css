@@ -1,0 +1,248 @@
+#bottom{
+	width:1000px;
+	padding:5px 0px ;
+	float:left;
+	background:#424242;
+	display:inline;
+}	
+
+.barone{
+
+	float:left;
+
+	width:312px;
+
+	padding-top:5px;
+
+	margin-right:5px;
+
+	margin-left:10px;
+
+	font-size:12px;
+
+	color: #fff;
+
+
+
+}
+
+.barone ul{
+
+	list-style-type: none;
+
+	margin: 0 ;
+
+	padding: 0;
+	font-family:Tahoma, century gothic,Arial,verdana, sans-serif;
+
+
+}
+
+.barone h2 {
+
+	height:24px;
+
+	line-height:24px;
+
+	font-size:16px;
+
+	color:#fff;
+
+	margin:0px 0 0 0 ;
+
+	padding:0px 0 10px 8px;
+
+	font-weight:bold;
+
+	text-transform: uppercase; 
+
+	
+
+	}
+
+
+
+.barone ul li {
+
+	height:100%;
+
+	line-height:28px;
+
+	padding: 0px 0px 0px 8px;
+
+	color:#fff;
+
+	border-bottom:1px dotted #353535;
+
+	}
+	
+
+
+
+.barone ul li a:link, .barone ul li a:visited {
+
+	color:#999;
+
+	text-decoration: none;
+
+	padding: 0px 0px 0px 0px;
+
+	}
+
+
+
+.barone ul li a:hover {
+
+	color: #fff;
+
+		}
+
+
+
+
+
+.videopost{
+
+	width:315px;
+	padding: 5px 5px ;
+	float:left;
+	background:#ececec;
+	border:1px solid #BBBBBB;
+	font: 13px Tahoma, century gothic,Arial,verdana, sans-serif;
+	color:#555;
+	line-height:20px;
+
+}
+.videopost h2{
+	font: 16px  century gothic,Arial,verdana, sans-serif;
+    font-weight:normal;
+    font-style:uppercase;
+	color:#fff;
+	margin:0px 0px 5px 0px;
+	padding:2px 5px;
+	display:block;
+	background:#4D98D4;
+
+}
+
+.videopost img{
+
+	float:left;
+	background:#fff;
+	padding:5px 5px;
+	margin:5px 5px 5px 5px;
+
+}
+
+
+.widebanner {
+	padding:5px 5px 5px 5px;
+	margin:0px 5px 5px 5px;
+	background:#fff;
+	overflow:hidden;
+	text-align:center;
+}
+
+.stor{
+
+height:32px;
+width:648px;
+background:#f44d06 url(images/stor.png) no-repeat;
+margin: 0px 10px 5px 5px;
+
+
+}
+
+.banner{
+	margin: 0px 0 0 0;
+	padding: 0px 0 0 0px;
+	height:100%;
+	width:325px;
+
+}
+
+.banner ul {
+   	 margin: 0px 0px;
+	 padding: 5px 5px;
+	 overflow: hidden;
+
+}
+	 
+.banner li{
+	width:125px;
+	margin: 0px 0px 10px 8px ;
+	padding:10px 10px ;
+	list-style:none;
+	display : block;
+	overflow:hidden;
+	float:left;
+	background:#B7B7B7 ;
+	border:1px solid #fff;
+	
+}
+
+.banner li a:link, .banner li a:visited {
+	text-decoration: none;
+}	
+
+
+
+#twit{
+	padding:0px 0px;
+	position:relative;
+	height:50px;
+	background:url(images/twit.png);
+	font-family:tahoma,century gothic,verdana, sans-serif;
+	color:#666;
+}	
+
+.follow{
+position:absolute;
+right:5px;
+top:-5px;
+
+}
+	#twitter_update_list {
+height:auto;
+margin: 0 0;
+
+}
+
+ul#twitter_update_list {
+
+list-style-type:none;
+padding: 20px 30px 0px 30px;
+width:940px;
+
+}
+
+ul#twitter_update_list  li {
+
+list-style-type:none;
+
+
+}
+
+ul#twitter_update_list  li span{
+color:#6F6F6F;
+list-style-type:none;
+margin-left:30px;
+
+}
+
+ul#twitter_update_list  li span a:link, ul#twitter_update_list  li span a:visited  {
+color:#DF0808;
+margin-left:10px;
+
+
+}
+
+ul#twitter_update_list  li a:link , ul#twitter_update_list  li a:visited{
+
+color:#000;
+height:20px;
+font-weight:bold;
+
+
+
+}
