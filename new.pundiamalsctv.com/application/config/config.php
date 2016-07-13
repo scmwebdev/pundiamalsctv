@@ -1,6 +1,8 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-$config['base_url']    			= :$env_config['host'];
+include (BASEPATH.'../env.php');
+
+$config['base_url']    			= $env_config['host'];
 $config['index_page']           = "";
 $config['uri_protocol']			= 'AUTO';
 //$config['uri_protocol']         = "REQUEST_URI";

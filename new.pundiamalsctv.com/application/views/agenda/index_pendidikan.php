@@ -13,7 +13,7 @@
 				echo $pilar[0]['shortdesc'];?></p>
                   <ul>
                   <?php foreach($detail_pilar_pendidikan as $v => $k): ?>
-                  <li><?php if(!empty($k['location'])) {?><img src="http://static.pundiamalsctv.com<?php echo($k['location']);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?>
+                  <li><?php if(!empty($k['location'])) {?><img src="<?php echo base_url().'images/'.substr($k['location'],1);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?>
                  <span style="color:#777777"><?php $tanggal=date("d-m-Y", strtotime($k['dates']));
 				echo $tanggal;?></span><br>
                 <?php

@@ -115,8 +115,8 @@ anylinkcssmenu.init("anchorclass")
 	    		<script type="text/javascript">
 				jwplayer("mediaplayer").setup({
 					'autostart'     : true,
-					'image'         : 'http://static.pundiamalsctv.com/<?php echo $ambilvideo[0]['loc_tpic'];?>',
-					'file'  		: 'http://static.pundiamalsctv.com<?php echo $ambilvideo[0]['loc_vic'];?>',
+					'image'         : '<?php echo base_url().'images/'.substr($ambilvideo[0]['loc_tpic'],1);?>',
+					'file'  		    : '<?php echo base_url().'images/'.substr($ambilvideo[0]['loc_vic'],1);?>',
 					'skin'          : '<?php echo base_url();?>skin/slim.zip',
 					'flashplayer'   : '<?php echo base_url();?>swf/player510.swf',
 					'width'         : '700',

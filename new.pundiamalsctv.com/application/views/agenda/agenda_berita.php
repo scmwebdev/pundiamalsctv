@@ -48,7 +48,7 @@
 <div id="pilar-inside">
 <ul>
 <?php foreach($kesehatan as $k=>$v):?>
-<li><?php if(!empty($v['location'])) {?><img src="http://static.pundiamalsctv.com<?php echo($v['location']);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><br><span style="color:#777777">
+<li><?php if(!empty($v['location'])) {?><img src="<?php echo base_url() . 'images/' . substr($v['location'],1);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><br><span style="color:#777777">
 <?php $tanggal=date("d-m-Y", strtotime($kesehatan[0]['dates']));
  echo $tanggal;?></span><br>
   <?php
@@ -67,7 +67,7 @@
 <div id="pilar-inside">
 <ul>
 <?php foreach($lingkungan as $k=>$v):?>
-<li><?php if(!empty($v['location'])) {?><img src="http://static.pundiamalsctv.com<?php echo($v['location']);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><br><span style="color:#777777">
+<li><?php if(!empty($v['location'])) {?><img src="<?php echo base_url() . 'images/' . substr($v['location'],1);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><br><span style="color:#777777">
 				<?php $tanggal=date("d-m-Y", strtotime($lingkungan[0]['dates']));
                 echo $tanggal;?></span><br>
  <?php
@@ -87,7 +87,7 @@
 <div id="pilar-inside">
 <ul>
 <?php foreach($bencana as $v => $k):?>
-<li><?php if(!empty($k['location'])) {?><img src="http://static.pundiamalsctv.com<?php echo($k['location']);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><br><span style="color:#777777"><?php $tanggal=date("d-m-Y",strtotime($bencana[0]['dates']));
+<li><?php if(!empty($k['location'])) {?><img src="<?php echo base_url() . 'images/' . substr($k['location'],1);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><br><span style="color:#777777"><?php $tanggal=date("d-m-Y",strtotime($bencana[0]['dates']));
        echo $tanggal;?></span><br>
         <?php
 				  $slug = url_title($k['title'], 'dash', true);
@@ -104,7 +104,7 @@
 <div id="pilar-inside">
 <ul>
 <?php foreach($pendidikan as $v=>$k):?>
-<li><?php if(!empty($k['location'])) {?><img src="http://static.pundiamalsctv.com<?php echo($k['location']);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><?php $tanggal=date("d-m-Y",strtotime($pendidikan[0]['dates']));
+<li><?php if(!empty($k['location'])) {?><img src="<?php echo base_url() . 'images/' . substr($k['location'],1);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><?php $tanggal=date("d-m-Y",strtotime($pendidikan[0]['dates']));
        echo $tanggal;?></span><br>
         <?php
 				  $slug = url_title($k['title'], 'dash', true);
@@ -208,7 +208,7 @@ BCA : 084 266 2000 <br /> KCU WISMA ASIA, SLIPI </div><br>
            	<?php foreach($foto as $k=>$v):?>
                	<div id="left-content-inside1">
                    <a href="<?php echo base_url('index.php/galeri/view_foto/'.$v['id'].'/'.$slug);?>" title="<?php echo $v['title'];?>"> 
-				<?php if(!empty($v['location'])) {?><img src="http://static.pundiamalsctv.com<?php echo $v['location']; ?>"width="210px" height="133px"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="210px" height="133px"><?php } ?>
+				<?php if(!empty($v['location'])) {?><img src="<?php echo base_url() . 'images/' . substr($v['location'],1);?>"width="210px" height="133px"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="210px" height="133px"><?php } ?>
 				
                  <?php
 				  $slug = url_title($v['title'], 'dash', true);
@@ -240,8 +240,8 @@ BCA : 084 266 2000 <br /> KCU WISMA ASIA, SLIPI </div><br>
             <a href="<?php echo base_url('index.php/galeri/view_video/'.$v['id'].'/'.$slug ); ?>" title="<?php echo $v['title'];?>"><div id="play-btn-small"></div>
 			<?php if(empty($v['loc_tpic'])){?>
                    <img src="<?php echo site_url();?>images/pundi-amal.jpg" width="218" height="124">
-                <?php }else{?>
-                <img src="http://static.pundiamalsctv.com/<?php echo $v['loc_tpic']; ?>" width="218" height="124">
+                <?php } else{ ?>
+                <img src="<?php echo base_url('images/'.substr($v['loc_tpic'],1)); ?>" width="218" height="124">
                 <?php } ?></a>
              <?php 
 				  $string=ucfirst(strtolower($v['title']));

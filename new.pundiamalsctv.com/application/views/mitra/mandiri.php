@@ -13,7 +13,7 @@
 <div id="container">
 <div id="top-mandiri"></div>
 <div id="content">
-    <p><?php if(!empty($ambilisi[0]['location'])) {?><img src="http://static.pundiamalsctv.com<?php echo $ambilisi[0]['location'];?>" width="700" height="300"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="700" height="300"><?php } ?><br>
+    <p><?php if(!empty($ambilisi[0]['location'])) {?><img src="<?php echo base_url().'images/'.substr($ambilisi[0]['location'],1);?>" width="700" height="300"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="700" height="300"><?php } ?><br>
        <?php echo $ambilisi[0]['news']; ?>
 	</p>
 </div>

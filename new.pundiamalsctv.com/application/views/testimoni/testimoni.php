@@ -12,7 +12,7 @@
 			<?php //echo $testimoni[0]['shortdesc'];?></p>
                   <ul>
                   <?php foreach($data_testimoni as $v => $k): ?>
-                    <li><?php if(!empty($k['location'])) {?><img src="http://static.pundiamalsctv.com<?php echo($k['location']);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><span style="color:#777777"><?php echo $k['dates'];?></span><br>
+                    <li><?php if(!empty($k['location'])) {?><img src="<?php echo base_url().'images/'.substr($k['location'],1);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><span style="color:#777777"><?php echo $k['dates'];?></span><br>
                     <?php
 				  $slug = url_title($k['title'], 'dash', true);
 				  //print_r($slug);

@@ -14,7 +14,7 @@
 				?>
                   <ul>                  
                   <?php foreach($search as $v => $k): ?>
-                   <li><?php if(!empty($k['location'])) {?><img src="http://static.pundiamalsctv.com<?php echo($k['location']);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><span style="color:#7777"><?php $tanggal=date("d-m-Y", strtotime($k['dates']));
+                   <li><?php if(!empty($k['location'])) {?><img src="<?php echo base_url().'images/'.substr($k['location'],1);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><span style="color:#7777"><?php $tanggal=date("d-m-Y", strtotime($k['dates']));
 				echo $tanggal;?></span><br>
                 <?php
 				  $slug = url_title($k['title'], 'dash', true);
@@ -82,7 +82,7 @@
       <div id="left-content-insidepage">
       <ul>
       <?php foreach($terbaru as $k => $v):?>
-      <li><span style="color:#7777"><img src="http://static.pundiamalsctv.com<?php echo($v['location']);?>" width="144" height="81" class="fl mr6"><?php $tanggal=date("d-m-Y", strtotime($k['dates']));
+      <li><span style="color:#7777"><img src="<?php echo base_url().'images/'.substr($v['location'],1);?>" width="144" height="81" class="fl mr6"><?php $tanggal=date("d-m-Y", strtotime($k['dates']));
 				echo $tanggal;?></span>
         <br>
         <?php

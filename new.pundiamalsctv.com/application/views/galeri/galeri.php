@@ -19,7 +19,7 @@
 ?>
 
 <a href="<?php echo base_url('index.php/galeri/view_foto/'.$k['id'].'/'.$slug); ?>">
-<?php if(!empty($k['location'])) {?><img src="http://static.pundiamalsctv.com<?php echo($k['location']);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><br><span style="color:#777777">
+<?php if(!empty($k['location'])) {?><img src="<?php echo base_url() . 'images/' . substr($k['location'],1);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><br><span style="color:#777777">
 <?php $tanggal=date("d-m-Y", strtotime($k['dates']));
 echo $tanggal;?></span><br>
               
@@ -57,7 +57,7 @@ echo $tanggal;?></span><br>
  <?php if(empty($k['loc_tpic'])){?>
  <img src="<?php echo site_url();?>images/pundi-amal.jpg"  width="144" height="81" class="fl mr6">
  <?php }else{?>
- <img src="http://static.pundiamalsctv.com/<?php echo $k['loc_tpic']; ?>"  width="144" height="81" class="fl mr6">
+ <img src="<?php echo base_url() . 'images/' . substr($k['loc_tpic'],1); ?>"  width="144" height="81" class="fl mr6">
  <?php } ?>
 
     <br>

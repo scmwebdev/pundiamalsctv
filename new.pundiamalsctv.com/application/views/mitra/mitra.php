@@ -11,7 +11,7 @@
                  <p><img src="<?php echo base_url();?>images/mitra.jpg" width="700" height="300"><br>
                   <ul>
                   <?php foreach($mitra as $k=>$v):?>
-                  <li><?php if(!empty($v['location'])) {?><img src="http://static.pundiamalsctv.com<?php echo($v['location']);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><span style="color:#777777"><?php $tanggal=date("d-m-Y", strtotime($v['dates']));
+                  <li><?php if(!empty($v['location'])) {?><img src="<?php echo base_url().'images/'.substr($v['location'],1);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><span style="color:#777777"><?php $tanggal=date("d-m-Y", strtotime($v['dates']));
 				echo $tanggal;?></span><br>
                 <?php
 				  $slug = url_title($v['title'], 'dash', true);

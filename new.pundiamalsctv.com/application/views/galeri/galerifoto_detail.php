@@ -5,7 +5,7 @@
     	    <div id="insidepage-content">
                	<div id="insidepage-inside">
                  <span style="font-weight:bold; font-size:16px"><?php echo $ambilfoto[0]['title'];?></span>
-                 <p><?php if(!empty($ambilfoto[0]['location'])) {?><img src="http://static.pundiamalsctv.com<?php echo $ambilfoto[0]['location'];?>" width="700" height="300" class="rheda"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="700" height="300"  class="rheda"><?php } ?><br>
+                 <p><?php if(!empty($ambilfoto[0]['location'])) {?><img src="<?php echo base_url(). 'images/'. substr($ambilfoto[0]['location'],1);?>" width="700" height="300" class="rheda"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="700" height="300"  class="rheda"><?php } ?><br>
                     <?php echo $ambilfoto[0]['description'];?>  
                  
                   </div>
@@ -14,7 +14,7 @@
          
 				<ul id="foo3">
 				  <?php foreach($foto_lainnya as $k=>$v):?>
-				  <li style="width: 210px; height: 133px;"><?php if(!empty($v['location'])) {?><a href="#" alt="<?php echo $v["title"];?>" onClick="showPreview('http://static.pundiamalsctv.com<?php echo $v['location'];?>'); return false"><img src="http://static.pundiamalsctv.com<?php echo $v['location'];?>" width="210px" height="133px"></a><?php }else{?><a href="#" onClick="showPreview('<?php echo site_url();?>images/pundi-amal.jpg'); return false"><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="210px" height="133px"><?php } ?></a></li>
+				  <li style="width: 210px; height: 133px;"><?php if(!empty($v['location'])) {?><a href="#" alt="<?php echo $v["title"];?>" onClick="showPreview('<?php echo base_url() . 'images/' . substr($v['location'],1);?>'); return false"><img src="<?php echo base_url() . 'images/' . substr($v['location'],1);?>" width="210px" height="133px"></a><?php }else{?><a href="#" onClick="showPreview('<?php echo site_url();?>images/pundi-amal.jpg'); return false"><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="210px" height="133px"><?php } ?></a></li>
                  <?php endforeach;?>
 				</ul>
 			<div class="clearfix"></div>

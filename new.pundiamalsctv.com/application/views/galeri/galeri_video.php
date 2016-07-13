@@ -90,7 +90,7 @@ anylinkcssmenu.init("anchorclass")
             <div id="slider" class="nivoSlider">
 			<?php if (is_array($headlines)){?>
 			<?php foreach($headlines as $k=>$v):?>
-            <a href=""><img src="http://static.pundiamalsctv.com/<?php echo $v['location'];?>" title="<?php echo $v['caption'];?>"/></a>   
+            <a href=""><img src="<?php echo base_url() . 'images/' . substr($v['location'],1);?>" title="<?php echo $v['caption'];?>"/></a>   
             <?php endforeach;?>   
             <?php } ?> 
             </div>
@@ -120,7 +120,7 @@ anylinkcssmenu.init("anchorclass")
 $slug = url_title($k['title'], 'dash', true);
 ?>
  <a href="<?php echo base_url('index.php/galeri/view_video/'.$k['id'].'/'.$slug); ?>">
-<?php if(!empty($k['loc_tpic'])) {?><img src="http://static.pundiamalsctv.com<?php echo($k['loc_tpic']);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><br><span style="color:#3300FF"><?php $tanggal=date("d-m-Y", strtotime($k['dates']));
+<?php if(!empty($k['loc_tpic'])) {?><img src="<?php echo base_url() . 'images/' . substr($v['loc_tpic'],1);?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><br><span style="color:#3300FF"><?php $tanggal=date("d-m-Y", strtotime($k['dates']));
 echo $tanggal;?></span><br>
 <?php  echo ucfirst(strtolower($k['title']));?>
 </a>

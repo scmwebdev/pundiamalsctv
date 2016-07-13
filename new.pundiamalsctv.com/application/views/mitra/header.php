@@ -134,7 +134,7 @@ anylinkcssmenu.init("anchorclass")
            <div id="slider" class="nivoSlider">
 			<?php if (is_array($headlines)){?>
 			<?php foreach($headlines as $k=>$v):?>
-            <a href=""><img src="http://static.pundiamalsctv.com/<?php echo $v['location'];?>" title="<?php echo $v['caption'];?>"/></a>   
+            <a href=""><img src="<?php echo base_url().'images/'.substr($v['location'],1);?>" title="<?php echo $v['caption'];?>"/></a>   
             <?php endforeach;?>   
             <?php } ?> 
             </div>

@@ -49,7 +49,7 @@
                 <?php if(empty($v['loc_pic'])){?>
                    <img src="<?php echo site_url();?>images/pundi-amal.jpg" width="218" height="124">
                 <?php }else{?>
-                <img src="<?php echo base_url() . 'assets' ?><?php echo $v['loc_tpic']; ?>" width="218" height="124">
+                <img src="<?php echo base_url() . 'images' ?><?php echo $v['loc_tpic']; ?>" width="218" height="124">
                 <?php } ?>
                 </a>
                 <a href="<?php echo base_url('index.php/galeri/view_video/'.$v['id'].'/'.$slug); ?>">
@@ -106,7 +106,7 @@
 				  $slug = url_title($v['title'], 'dash', true);
 				  //print_r($slug);
 				  ?>
-                  <a href="<?php echo base_url('index.php/agenda/view/'.$v['id'].'/'.$slug); ?>"><img src="http://static.pundiamalsctv.com/<?php echo($v['location']); ?>" width="440" height="283" border="0"></a></div>
+                  <a href="<?php echo base_url('index.php/agenda/view/'.$v['id'].'/'.$slug); ?>"><img src="<?php echo base_url() . 'images/'.substr($v['location'],1); ?>" width="440" height="283" border="0"></a></div>
                 </div>
                 <?php endforeach; ?>
  
@@ -147,7 +147,7 @@
          <div class="isicenter">
             	<ul>
                 <?php foreach($sebelumnya as $k => $v) :?>
-                <li><?php if(!empty($v['location'])) {?><img src="http://static.pundiamalsctv.com/<?php echo($v['location']); ?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><span style="color:#777777"><?php $tanggal=date("d-m-Y", strtotime($v['dates']));
+                <li><?php if(!empty('images/'.substr($v['location'],1))) {?><img src="<?php echo base_url() . 'images/'.substr($v['location'],1); ?>" width="144" height="81" class="fl mr6"><?php }else{?><img src="<?php echo site_url();?>images/pundi-amal.jpg" width="144" height="81" class="fl mr6"><?php } ?><span style="color:#777777"><?php $tanggal=date("d-m-Y", strtotime($v['dates']));
 				echo $tanggal;
 				?></span>
                   <br>
@@ -241,7 +241,7 @@ BCA : 084 266 2000 <br /> KCU WISMA ASIA, SLIPI </div><br>
             <?php foreach($foto as $k=>$v):?>
         <div id="left-content-inside1">
         <a href="<?php echo base_url('index.php/galeri/view_foto/'.$v['id']).'/'.$slug;?>">
-        <img src="http://static.pundiamalsctv.com/<?php echo($v['location']); ?>" width="218" height="124"></a>
+        <img src="<?php echo base_url() . 'images/'.substr($v['location'],1); ?>" width="218" height="124"></a>
                  <?php
 				  $slug = url_title($v['title'], 'dash', true);
 				  //print_r($slug);

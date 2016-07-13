@@ -12,8 +12,8 @@
 	    		<script type="text/javascript">
 				jwplayer("mediaplayer").setup({
 					'autostart'     : true,
-					'image'         : 'http://static.pundiamalsctv.com/<?php echo $ambilvideo[0]['loc_pic'];?>',
-					'file'  : 'http://static.pundiamalsctv.com<?php echo $ambilvideo[0]['loc_vic'];?>',
+					'image'         : '<?php echo base_url().'images/'.substr($ambilvideo[0]['loc_pic'],1);?>',
+					'file'          : '<?php echo base_url().'images/'.substr($ambilvideo[0]['loc_pic'],1);?>',
 					'skin'          : '<?php echo base_url();?>skin/slim.zip',
 					'flashplayer'   : '<?php echo base_url();?>swf/player510.swf',
 					'width'         : '700',
@@ -35,7 +35,7 @@
                    <?php if(empty($v['loc_tpic'])){?>
                    <img src="<?php echo site_url();?>images/pundi-amal.jpg" width="210px" height="133px">
                 <?php }else{?>
-                <img src="http://static.pundiamalsctv.com/<?php echo $v['loc_pic']; ?>" width="210px" height="133px">
+                <img src="<?php echo base_url().'images/'.substr($ambilvideo[0]['loc_pic'],1);?>" width="210px" height="133px">
                 <?php } ?></a>
                 </li>
                  <?php endforeach;?>
